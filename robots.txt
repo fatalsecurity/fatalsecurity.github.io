@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /tos.html
+Noindex: /tos.html

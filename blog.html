@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fatal Security research blog.">
+
+<title>Fatal Security Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link href="css/clean-blog.min.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<!--media-queries-->
+<link href="assets/media-queries.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+.jumbotron {
+  padding: 100px, 25px;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.bg-particles {
+  background-color: #404040;
+  position:relative;
+  z-index:0;
+  min-width: 100%;
+  height: 300px;
+}
+.overlay {
+  position:absolute;
+  z-index:1;
+  min-width: 100%;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #C4C4C4;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #CD0606 !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #808080 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+</style>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html"><img src="images/fatalsecurity.png" alt="Fatal Security Logo" title="Fatal Security Logo" width="100%" height="100%"></a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="window.open('index.html','_self')">HOME</a></li>
+        <li class="dropdown service_d">
+          <a href="#" onclick="window.open('index.html#services','_self')" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="window.open('services.html#wapt','_self')">Web App Pentesting</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#npt','_self')">Network Pentesting</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#mapt','_self')">Mobile App Pentesting</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#ppt','_self')">Physical Pentesting</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#va','_self')">Vulnerability Assessments</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#ir','_self')">Incident Response</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="window.open('services.html#se','_self')">Social Engineering</a></li>
+          </ul>
+        </li>
+        <li class="service_m"><a href="#" onclick="window.open('index.html#services','_self')">SERVICES</a></li>
+        <li><a href="#" onclick="window.open('index.html#about','_self')">ABOUT</a></li>
+        <li><a href="#" onclick="window.open('index.html#contact','_self')">CONTACT</a></li>
+        <li><a href="#" onclick="window.open('index.html#testimonials','_self')">TESTIMONIALS</a></li>
+        <li class="active"><a href="#" onclick="window.open('blog.html','_self')">BLOG</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<script>
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+  document.write('<img class="pimgpsh_fullsize" src="images/pimgpsh_fullsize_distr.png"/><img class="pimgpsh_768" src="images/pimgpsh_768.png"/><img class="pimgpsh_480" src="images/pimgpsh_480.png"/>')
+}else{
+  document.write('<div id="particles-js" class="jumbotron bg-particles"><div class="overlay center-text"></div></div>')
+}
+</script>
+
+<!-- Main Content -->
+<div class="container">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="post-preview">
+      <a href="posts/sqlmap-cheatsheet-and-examples.html">
+        <h2 class="post-title">
+          SQLmap Cheatsheet And Examples
+        </h2>
+        <h3 class="post-subtitle">
+          SQLmap reference guide with example queries.
+        </h3>
+      </a>
+      <p class="post-meta">Posted by <a href="#">John Roos</a> on January 8, 2017</p>
+    </div>
+    <div class="post-preview">
+      <a href="posts/cracking-rsa-private-keys-with-weak-rngs.html">
+        <h2 class="post-title">
+          Cracking RSA Public Key Cryptography
+        </h2>
+        <h3 class="post-subtitle">
+          Extracting private keys from public keys generated with weak random number generators.
+        </h3>
+      </a>
+      <p class="post-meta">Posted by <a href="#">John Roos</a> on December 3, 2016</p>
+    </div>
+    <div class="post-preview">
+      <a href="posts/cupp-password-list-generation.html">
+        <h2 class="post-title">
+          Password List Generation Using CUPP
+        </h2>
+        <h3 class="post-subtitle">
+          Using OSINT to generate highly effective, custom password dictionaries.
+        </h3>
+      </a>
+      <p class="post-meta">Posted by <a href="#">John Roos</a> on September 22, 2016</p>
+    </div>
+    <hr>
+    <!-- Pager -->
+    <ul class="pager">
+      <li class="next">
+        <a href="#">Older Posts &rarr;</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul class="list-inline text-center">
+        <li>
+          <a href="https://twitter.com/Fatal_Security">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/fatal-security">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright text-muted">Copyright &copy; Fatal Security LLC 2016 | All Rights Reserved | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a></p>
+    </div>
+  </div>
+</div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/clean-blog.min.js"></script>
+
+<script src="js/particles.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {});
+</script>
+
+<script>
+$(document).on('click','.navbar-collapse.in',function(e) {
+if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+  $(this).collapse('hide');
+}
+});
+</script>
+
+</body>
+
+</html>

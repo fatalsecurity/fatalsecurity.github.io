@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fatal Security: Penetration Testing Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fatal Security offers in-depth network penetration testing, mobile app penetration testing, web app penetration testing, social engineering assessments, and incident response services.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    color: #CD0606;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    padding: 100px, 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .bg-particles {
+    background-color: #404040;
+    position:relative;
+    z-index:0;
+    min-width: 100%;
+    height: 300px;
+  }
+  .overlay {
+    position:absolute;
+    z-index:1;
+    min-width: 100%;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #C4C4C4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #CD0606 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #808080 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #CD0606;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+  }
+  </style>
+  <!--media-queries-->
+  <link href="assets/media-queries.css" rel="stylesheet" type="text/css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img src="images/fatalsecurity.png" alt="Fatal Security Logo" title="Fatal Security Logo" width="100%" height="100%"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="window.open('index.html','_self')">HOME</a></li>
+          <li class="dropdown service_d">
+            <a href="#" onclick="window.open('index.html#services','_self')" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="#wapt">Web App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#npt">Network Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#mapt">Mobile App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#ppt">Physical Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#va">Vulnerability Assessments</a></li>
+              <li class="divider"></li>
+              <li><a href="#ir">Incident Response</a></li>
+              <li class="divider"></li>
+              <li><a href="#se">Social Engineering</a></li>
+            </ul>
+          </li>
+          <li class="service_m"><a href="#" onclick="window.open('index.html#services','_self')">SERVICES</a></li>
+          <li><a href="#" onclick="window.open('index.html#about','_self')">ABOUT</a></li>
+          <li><a href="#" onclick="window.open('index.html#contact','_self')">CONTACT</a></li>
+          <li><a href="#" onclick="window.open('index.html#testimonials','_self')">TESTIMONIALS</a></li>
+          <li><a href="#" onclick="window.open('blog.html','_self')">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    document.write('<img class="pimgpsh_fullsize" src="images/pimgpsh_fullsize_distr.png"/><img class="pimgpsh_768" src="images/pimgpsh_768.png"/><img class="pimgpsh_480" src="images/pimgpsh_480.png"/>')
+  }else{
+    document.write('<div id="particles-js" class="jumbotron bg-particles"><div class="overlay center-text"></div></div>')
+  }
+</script>
+
+<!-- Container (Web App Pentesting Section) -->
+<div id="wapt" class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-md-push-8">
+      <img src="images/WebAppPentesting.png" alt="Ask us about our webapp pentest assessments." title="Webapp Pentest Assessment" width="100%" height="100%">
+    </div>
+
+    <div class="col-md-8 col-md-pull-4">
+      <h2>Web Application Penetration Testing</h2><br>
+      <h4>Here at Fatal Security, we pride ourselves in our web application assessments. Whether you want a static, dynamic, or a hybrid assessment of your web application, we do it all. Ask how we can integrate into your SDLC for continuous testing throughout your development process.</h4>
+      <br>
+      <p>Don't become another headline breach. Our team uses the same tools and techniques hackers use to find and exploit the vulnerabilities that exist in your website. Ask us about integrating into your SDLC for continuous testing throughout the development process.</p>
+      <h3>What you'll get:</h3>
+      <ul>
+        <li>Actionable Findings: Our web application security experts will isolate vulnerabilities in your website and provide remediatory steps.
+          <li>Unparalleled Service: Fatal Security provides detailed proof-of-concept steps to recreate each attack.
+            <li>Standardized Testing Frameworks: Our web application pentests aim to exploit OWASP Top 10 vulnerabilities.
+              <li>Efficient and Affordable: Fatal Security specializes in customer satisfaction by meeting tight deadlines at an affordable cost.
+              </ul>
+              <h4><a href="waptreport.html">Request a free sample report.</a></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container (Network Pentesting Section) -->
+        <div id="npt" class="container-fluid bg-grey">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/NetworkPentesting.png" alt="Ask us about our network pentest assessments." title="Network Pentest Assessment" width="100%" height="100%">
+            </div>
+            <div class="col-sm-8">
+              <h2>Network Penetration Testing</h2><br>
+              <h4>Attackers are relentlessly targeting your network. Are you prepared for the worst case scenario? Let Fatal Security overhaul your security with a holistic network penetration assessment.</h4>
+              <br>
+              <p>Ask us about our internal and external network penetration test offerings. Our dedicated team of hackers boast an impressive history of exploiting even the most hardened networks. Network penetration tests provide crucial insight to find holes in your network defenses. We provide PCI DSS, FISMA and HIPAA security checks to ensure your compliance needs are met.</p>
+              <h3>Our approach:</h3>
+              <ul>
+                <li>Focused and Concise: Our certified penetration testers pinpoint vulnerabilities in your network, servers, firewalls, system configurations, and more.
+                  <li>Highly Specialized Toolsets: Fatal Security utilizes state of the art commercial and custom tool sets to provide maximum value to our clients.
+                    <li>Standards Driven: Our penetration tests follow rigid guidelines to ensure no attack vector is left untested. Frameworks we test against include OSSTM, NIST, and OWASP.
+                      <li>Efficient and Affordable: Fatal Security specializes in customer satisfaction by meeting tight deadlines at an affordable cost.
+                      </ul>
+                      <h4><a href="nptreport.html">Request a free sample report.</a></h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Container (Mobile Pentesting Section) -->
+                <div id="mapt" class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                      <img src="images/MobilePentesting.png" alt="Ask us about our mobile app pentest assessments." title="Mobile App Pentest Assessment" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">
+                      <h2>Mobile Penetration Testing</h2><br>
+                      <h4>Mobile apps are often the most exploitable part of any business. Our team specializes in finding vulnerabilities in your mobile app and the web services it relies on. </h4>
+                      <br>
+                      <p>Whether you're developing apps for Windows, IOS, Android or all three, a comprehensive vulnerability assessment with an in-depth penetration test will ensure your end users' safety.</p>
+                      <h3>How we do it:</h3>
+                      <ul>
+                        <li>Static and dynamic code testing offered.
+                          <li>We offer comprehensive assessments that target the SANS 25 and OWASP testing frameworks.
+                            <li>We assess both the app itself and the supporting infrastructure behind it. We test session management, cryptography, input sanitization, and more.
+                              <li>Security is crucial to the safety of your app's users. Business logic is crucial to your bottom line. We test both.
+                              </ul>
+                              <h4><a href="#" onclick="window.open('index.html#contact','_self')">Contact us to learn more about our mobile app pentesting.</a></h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Container (Physical Pentesting Section) -->
+                        <div id="ppt" class="container-fluid bg-grey">
+                          <div class="row">
+
+                            <div class="col-sm-4">
+                              <img src="images/PhysicalPentesting.png" alt="Ask us about our physical pentest assessments." title="Physical Pentest Assessment" width="100%" height="100%">
+                            </div>
+                            <div class="col-sm-8">
+                              <h2>Physical Penetration Testing</h2><br>
+                              <h4>The primary objective of our physical penetration test is to assess the strength of existing physical security controls and exploit their weaknesses before the real bad actors do. </h4>
+                              <br>
+                              <p>Physical access is total access. With years of experience breaking into the unbreakable, let us find the hidden weaknesses in your organization. Our goal-oriented physical penetration testing will test your physical controls in a real-world scenario. We approach each physical security assessments in a similar fashion to our network penetration tests, by using a proven 4 step process.</p>
+                              <h3>Our 4 step process:</h3>
+                              <ul>
+                                <li>Reconnaissance
+                                  <li>Scanning
+                                    <li>Gaining Access
+                                      <li>Maintaining Access
+                                        <li>Clearing Our Tracks
+                                        </ul>
+                                        <h4><a href="#" onclick="window.open('index.html#contact','_self')">Contact us to learn more about our physical penetration testing services.</a></h4>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Container (Vulnerability Assessment Section) -->
+                                  <div id="va" class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-md-4 col-md-push-8">
+                                        <img src="images/VulnerabilityAssessments.png" alt="Ask us about our vulnerability assessments." title="Vulnerability Assessment" width="100%" height="100%">
+                                      </div>
+                                      <div class="col-md-8 col-md-pull-4">
+                                        <h2>Vulnerability Assessments</h2><br>
+                                        <h4>Vulnerability assessments help organizations meet audit and compliance requirements by finding flaws and weaknesses in applications, services, and configurations.</h4>
+                                        <br>
+                                        <p>Meeting compliance and audit requirements can be a daunting undertaking. Fatal Security will conduct a comprehensive in-depth vulnerability assessment to help your organization achieve PCI DSS, FISMA and HIPAA compliance.</p>
+                                        <h3>Our vulnerability assessments cover:</h3>
+                                        <ul>
+                                          <li>Encryption methods
+                                            <li>Windows console reviews
+                                              <li>Linux console reviews
+                                                <li>Network vulnerability scans
+                                                  <li>Web application vulnerability scans
+                                                  </ul>
+                                                  <h4><a href="#" onclick="window.open('index.html#contact','_self')">Ask us about conducting a vulnerability assessment.</a></h4>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <!-- Container (Incident Response Section) -->
+                                            <div id="ir" class="container-fluid bg-grey">
+                                              <div class="row">
+
+                                                <div class="col-sm-4">
+                                                  <img src="images/IncidentResponse.png" alt="Ask us about our incident response services." title="Incident Response Services" width="100%" height="100%">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                  <h2>Incident Response</h2><br>
+                                                  <h4>Proactive security is ideal, but reactive security is a must. We as defenders have to be ever vigilant and strive to block 100% of all attacks. What happens when an attack makes it through the cracks? Incident response is the E.R. team of information security. Let Fatal Security be the ones to respond to your next network intrusion.</h4><br>
+                                                  <p>Do you think you’ve been a victim of a cyber attack? Let Fatal Security lead your next incident mitigation effort to help isolate, quarantine and remediate any remaining persistent threats in your organization. We specialize in damage reduction.</p>
+                                                  <h3>What we offer:</h3>
+                                                  <ul>
+                                                    <li>Infection containment, preventing whole network takeover
+                                                      <li>Sanitize the infected endpoint
+                                                        <li>Real-time assessment of accessed critical data
+                                                        </ul>
+                                                        <h4><a href="#" onclick="window.open('index.html#contact','_self')">Reach out to us to learn more about our incident response capabilities.</a></h4>
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Container (Social Engineering Section) -->
+                                                <div id="se" class="container-fluid">
+                                                  <div class="row">
+                                                    <div class="col-md-4 col-md-push-8">
+                                                      <img src="images/SocialEngineering.png" alt="Ask us about our network social engineering assessments." title="Social Engineering Assessment" width="100%" height="100%">
+                                                    </div>
+                                                    <div class="col-md-8 col-md-pull-4">
+                                                      <h2>Social Engineering</h2><br>
+                                                      <h4>A recent study by Verizon confirmed that Social Engineering has repeatedly been the root cause of headline breaches. Don't let your people be the weakest link in your organization.</h4>
+                                                      <br>
+                                                      <p>Let us help you identify your organization's weakest links and show you how to make them your greatest strengths. With our continuous testing methodology, we aim to provide actionable data to help isolate pain points in your organization. Common attack vectors include email phishing, phone phishing, utilizing found flash drives, and verbal in-person social engineering.</p>
+                                                      <h3>Our tactics and techniques:</h3>
+                                                      <ul>
+                                                        <li>Attack design: Fatal Security will work with you to develop a realistic attack scenario to evaluate organizational security awareness.
+                                                          <li>Attack investment: Our security consultants craft specialized spear-phishing emails targeting key personnel.
+                                                            <li>Attack engineering: We build specific exploit landing pages for each assessment.
+                                                              <li>Attack debriefing: We provide detailed reports with executive charts to illustrate organizational security awareness.
+                                                              </ul>
+                                                              <h4><a href="#" onclick="window.open('index.html#contact','_self')">Ask us about our social engineering services.</a></h4>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <footer class="container-fluid bg-grey text-center">
+                                                          <a href="#top" title="To Top">
+                                                            <span class="glyphicon glyphicon-chevron-up"></span>
+                                                          </a>
+                                                          <div class="row">
+                                                            <ul class="list-inline text-center">
+                                                              <li>
+                                                                <a href="https://twitter.com/Fatal_Security">
+                                                                  <span class="fa-stack fa-lg">
+                                                                    <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+                                                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                                                  </span>
+                                                                </a>
+                                                              </li>
+                                                              <li>
+                                                                <a href="https://www.linkedin.com/company/fatal-security">
+                                                                  <span class="fa-stack fa-lg">
+                                                                    <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+                                                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                                                  </span>
+                                                                </a>
+                                                              </li>
+                                                            </ul>
+                                                            <p class="copyright text-muted">Copyright &copy; Fatal Security LLC 2016 | All Rights Reserved | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a></p>
+                                                          </div>
+                                                        </footer>
+
+                                                        <script>
+                                                        $(document).ready(function(){
+                                                          // Add smooth scrolling to all links in navbar + footer link
+                                                          $(".navbar a, footer a[href='#top']").on('click', function(event) {
+                                                            // Make sure this.hash has a value before overriding default behavior
+                                                            if (this.hash !== "") {
+                                                              // Prevent default anchor click behavior
+                                                              event.preventDefault();
+
+                                                              // Store hash
+                                                              var hash = this.hash;
+
+                                                              // Using jQuery's animate() method to add smooth page scroll
+                                                              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                                                              $('html, body').animate({
+                                                                scrollTop: $(hash).offset().top
+                                                              }, 900, function(){
+
+                                                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                                                window.location.hash = hash;
+                                                              });
+                                                            } // End if
+                                                          });
+
+                                                          $(window).scroll(function() {
+                                                            $(".slideanim").each(function(){
+                                                              var pos = $(this).offset().top;
+
+                                                              var winTop = $(window).scrollTop();
+                                                              if (pos < winTop + 600) {
+                                                                $(this).addClass("slide");
+                                                              }
+                                                            });
+                                                          });
+                                                        })
+                                                      </script>
+
+                                                      <script src="js/particles.js"></script>
+                                                      <script>
+                                                      particlesJS.load('particles-js', 'assets/particles.json', function() {});
+                                                    </script>
+
+                                                    <script>
+                                                    $(document).on('click','.navbar-collapse.in',function(e) {
+                                                      if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                                                        $(this).collapse('hide');
+                                                      }
+                                                    });
+                                                  </script>
+
+                                                </body>
+                                                </html>

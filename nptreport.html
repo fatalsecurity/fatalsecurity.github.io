@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fatal Security: Network Penetration Testing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fatal Security offers a free sample network penetration report upon request.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    vertical-align: top;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #CD0606;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    padding: 100px, 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .bg-particles {
+    background-color: #404040;
+    position:relative;
+    z-index:0;
+    min-width: 100%;
+    height: 300px;
+  }
+  .overlay {
+    position:absolute;
+    z-index:1;
+    min-width: 100%;
+  }
+  .logo-small {
+    color: #CD0606;
+    font-size: 50px;
+  }
+  .logo {
+    color: #CD0606;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #CD0606;
+  }
+  .carousel-indicators li {
+    border-color: #CD0606;
+  }
+  .carousel-indicators li.active {
+    background-color: #CD0606;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #CD0606;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #CD0606;
+    background-color: #fff !important;
+    color: #CD0606;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #CD0606 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #CD0606;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #C4C4C4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #CD0606 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #808080 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #CD0606;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+  <!--media-queries-->
+  <link href="assets/media-queries.css" rel="stylesheet" type="text/css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img src="images/fatalsecurity.png" alt="Fatal Security Logo" title="Fatal Security Logo" width="100%" height="100%"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="window.open('index.html','_self')">HOME</a></li>
+          <li class="dropdown service_d">
+            <a href="#" onclick="window.open('index.html#services','_self')" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="window.open('services.html#wapt','_self')">Web App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#npt','_self')">Network Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#mapt','_self')">Mobile App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ppt','_self')">Physical Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#va','_self')">Vulnerability Assessments</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ir','_self')">Incident Response</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#se','_self')">Social Engineering</a></li>
+            </ul>
+          </li>
+          <li class="service_m"><a href="#" onclick="window.open('index.html#services','_self')">SERVICES</a></li>
+          <li><a href="#" onclick="window.open('index.html#about','_self')">ABOUT</a></li>
+          <li><a href="#" onclick="window.open('index.html#contact','_self')">CONTACT</a></li>
+          <li><a href="#" onclick="window.open('index.html#testimonials','_self')">TESTIMONIALS</a></li>
+          <li><a href="#" onclick="window.open('blog.html','_self')">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Container (Network Penetration Test Section) -->
+  <script>
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    document.write('<img class="pimgpsh_fullsize" src="images/pimgpsh_fullsize_distr.png"/><img class="pimgpsh_768" src="images/pimgpsh_768.png"/><img class="pimgpsh_480" src="images/pimgpsh_480.png"/>')
+  }else{
+    document.write('<div id="particles-js" class="jumbotron bg-particles"><div class="overlay center-text"></div></div>')
+  }
+</script>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <h1 class="text-center">Network Penetration Test</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>See for yourself how Fatal Security can provide actionable findings that isolate the weakest endpoints in your organization's network. </h4>
+      <p>Our comprehensive reports provide the in-depth detail system admins require while outlining strategic findings that matter most to leadership. Request a sample report today, inside you'll find...</p>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Executive Summary <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Scope of Work <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Summary of Findings <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Technical Findings Overview <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Tools and Techniques <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Risk Classifications <br>
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Remediation Steps
+    </div>
+    <div class="col-sm-4 text-center">
+      <img src="images/nptreport.png" alt="Request a free sample report." title="Network Penetration Test Sample Report" width="75%" height="75%">
+    </div>
+    <div class="col-sm-4">
+      <h2 class="text-center">Request a free sample report</h2>
+      <form action="https://formspree.io/info@fatalsecurity.com" method="post">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="fname" name="firstname" placeholder="First Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="lname" name="lastname" placeholder="Last Name" type="text" required>
+          </div>
+          <div class="col-sm-12 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+          <div class="col-sm-12 form-group">
+            <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
+          </div>
+          <div class="col-sm-12 form-group">
+            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#top" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div class="row">
+    <ul class="list-inline text-center">
+      <li>
+        <a href="https://twitter.com/Fatal_Security">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/fatal-security">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright text-muted">Copyright &copy; Fatal Security LLC 2016 | All Rights Reserved | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#top']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+})
+</script>
+
+<script src="js/particles.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {});
+</script>
+
+<script>
+$(document).on('click','.navbar-collapse.in',function(e) {
+  if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    $(this).collapse('hide');
+  }
+});
+</script>
+
+</body>
+</html>

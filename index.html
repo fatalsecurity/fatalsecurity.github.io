@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fatal Security: Penetration Testing and Vulnerability Assessment Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fatal Security is a security consulting firm that offers vulnerability assessments and in-depth web, network, and physical penetration testing services.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84158557-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84158557-1');
+  </script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    padding: 100px, 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .bg-particles {
+    background-color: #404040;
+    position:relative;
+    z-index:0;
+    min-width: 100%;
+    height: 300px;
+  }
+  .overlay {
+    position:absolute;
+    z-index:1;
+    min-width: 100%;
+  }
+  .logo-small {
+    color: #CD0606;
+    font-size: 50px;
+  }
+  .logo {
+    color: #CD0606;
+    font-size: 200px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #CD0606;
+  }
+  .carousel-indicators li {
+    border-color: #CD0606;
+  }
+  .carousel-indicators li.active {
+    background-color: #CD0606;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #C4C4C4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #CD0606 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #808080 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #CD0606;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+  <!--media-queries-->
+  <link href="assets/media-queries.css" rel="stylesheet" type="text/css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#top"><img src="images/fatalsecurity.png" alt="Fatal Security Logo" title="Fatal Security Logo" width="100%" height="100%"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top">HOME</a></li>
+          <li class="dropdown service_d">
+            <a href="#services" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="window.open('services.html#wapt','_self')">Web App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#npt','_self')">Network Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#mapt','_self')">Mobile App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ppt','_self')">Physical Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#va','_self')">Vulnerability Assessments</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ir','_self')">Incident Response</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#se','_self')">Social Engineering</a></li>
+            </ul>
+          </li>
+          <li class="service_m"><a href="#services">SERVICES</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    document.write('<img class="pimgpsh_fullsize" src="images/pimgpsh_fullsize_distr.png"/><img class="pimgpsh_768" src="images/pimgpsh_768.png"/><img class="pimgpsh_480" src="images/pimgpsh_480.png"/>')
+  }else{
+    document.write('<div id="particles-js" class="jumbotron bg-particles"><div class="overlay center-text"></div></div>')
+  }
+</script>
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>WHAT WE DO</h2>
+  <h4>Breaking things is our passion, how we fix them is what sets us apart.</h4>
+  <br>
+  <!-- <div class="row slideanim"> -->
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="#" onclick="window.open('services.html#wapt','_self')"><span class="glyphicon glyphicon-modal-window logo-small"></span>
+        <h4>Web Application Penetration Testing</h4></a>
+        <p>No matter what framework, or which language, breaking websites is what we do best.</p>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" onclick="window.open('services.html#npt','_self')"><span class="glyphicon glyphicon-screenshot logo-small"></span>
+          <h4>Network Penetration Testing</h4></a>
+          <p>Our dedicated team of hackers boast an impressive history of exploiting even the most hardened networks.</p>
+        </div>
+        <div class="col-sm-3">
+          <a href="#" onclick="window.open('services.html#mapt','_self')"><span class="glyphicon glyphicon-phone logo-small"></span>
+            <h4>Mobile App Penetration Testing</h4></a>
+            <p>Let us perform a rigorous security assessment to ensure your app and its web services are secured.</p>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" onclick="window.open('services.html#ppt','_self')"><span class="glyphicon glyphicon-lock logo-small"></span>
+              <h4>Physical Penetration Testing</h4></a>
+              <p>Breaking in is what we do best, let us be the last team to breach your perimeter.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="#" onclick="window.open('services.html#va','_self')"><span class="glyphicon glyphicon-check logo-small"></span>
+                <h4>Vulnerability Assessments</h4></a>
+                <p>Assess your infrastructure's security posture to isolate weaknesses with a comprehensive vulnerability assessment.</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="#" onclick="window.open('services.html#ir','_self')"><span class="glyphicon glyphicon-fire logo-small"></span>
+                  <h4>Incident Response</h4></a>
+                  <p>With years of experience infiltrating networks and hiding our tracks, we know all the tools and techniques the hackers use to accomplish the same.</p>
+                </div>
+                <div class="col-sm-4">
+                  <a href="#" onclick="window.open('services.html#se','_self')"><span class="glyphicon glyphicon-user logo-small"></span>
+                    <h4>Social Engineering</h4></a>
+                    <p>Let us help you identify your organization's weakest links and show you how to make them your greatest strengths.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Container (About Section) -->
+              <div id="about" class="container-fluid bg-grey">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2>About Us</h2><br>
+                    <img class="spider_img_mview" src="images/fatalsecurityspider.png" alt="Fatal Security Spider" title="Fatal Security Spider" width="85%" height="85%">
+                    <br>
+                    <h4>Fatal Security is a security consulting firm based out of Atlanta, Georgia. We offer a variety of Information Security solutions and services. The core of our business is to offer in-depth penetration testing, vulnerability assessments, and social engineering assessments.</h4>
+                    <br>
+                    <p>We are a seasoned team of Information Security professionals, incredibly passionate about our field. Our highly skilled team of engineers excel in vulnerability reconnaissance, exploitation, and remediation. Each team member hold at minimum a technical Bachelor's degree and actively participate in the open-source security community. We boast over 10 years of direct, hands on experience, and hold numerous industry standard security certifications:
+                      <ul>
+                        <li>ISC2 Certified Information Systems Security Professional (CISSP)
+                          <li>SANS GIAC Penetration Tester (GPEN)
+                            <li>EC-Council Certified Ethical Hacker (CEH)
+                              <li>Offensive Security Certified Penetration Tester (OSCP)
+                                <li>Comptia Security+
+                                </ul>
+                                <br>
+                              </p>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                              <img class="spider_img_dview" src="images/fatalsecurityspider.png" alt="Fatal Security Spider" title="Fatal Security Spider" width="85%" height="85%">
+                            </div>
+                          </div>
+                          <div class="row certified">
+                            <div class="col-sm-2 text-center">
+                              <img src="images/CISSP.png" alt="CISSP Certified" title="ISC2 CISSP Certification">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                              <img src="images/GPEN.png" alt="GPEN Certified" title="SANS GIAC GPEN Certification">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                              <img src="images/CEH.png" alt="CEH Certified" title="EC-Council CEH Certification">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                              <img src="images/OSCP.png" alt="OSCP Certified" title="Offensive Security OSCP Certification">
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Container (Contact Section) -->
+                        <div id="contact" class="container-fluid">
+                          <h2 class="text-center">CONTACT</h2>
+                          <div class="row">
+                            <div class="col-sm-5">
+                              <p>Contact us and we'll get back to you within 24 hours.</p>
+                              <p><span class="glyphicon glyphicon-map-marker"></span>10719 Alpharetta Hwy #1622, Roswell, GA 30076</p>
+                              <p><span class="glyphicon glyphicon-phone"></span>(678) 845-8342</p>
+                              <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@fatalsecurity.com">info@fatalsecurity.com</a></p>
+                            </div>
+                            <div class="col-sm-7 slideanim">
+                              <form action="https://formspree.io/info@fatalsecurity.com" method="post">
+                                <div class="row">
+                                  <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="fname" name="firstname" placeholder="First Name" type="text" required>
+                                  </div>
+                                  <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="lname" name="lastname" placeholder="Last Name" type="text" required>
+                                  </div>
+                                  <div class="col-sm-12 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                  </div>
+                                  <div class="col-sm-12 form-group">
+                                    <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
+                                  </div>
+                                  <div class="col-sm-12 form-group">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" required>
+                                  </div>
+                                </div>
+                                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea><br>
+                                <div class="row">
+                                  <div class="col-sm-12 form-group">
+                                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="googleMap" style="height:400px;width:100%;"></div>
+
+                        <!-- Container (Testimonials Section) -->
+                        <div id="testimonials" class="container-fluid text-center bg-grey">
+
+                          <h2>What our clients are saying</h2>
+                          <div id="carousel" class="carousel slide text-center" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel" data-slide-to="1"></li>
+                              <li data-target="#carousel" data-slide-to="2"></li>
+                              <li data-target="#carousel" data-slide-to="3"></li>
+                              <li data-target="#carousel" data-slide-to="4"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item">
+                                <h4>"John did a great job on our project. Excellent communication. Great with timelines and last minute requests!"<br><span style="font-style:normal;">Deb Calimano-Schmitt, Gold Group Enterprises</span></h4>
+                              </div>
+                              <div class="item">
+                                <h4>"Very successful job completion. Highly specialized work and this company knows what they're doing. Overall, an excellent job and experience."<br><span style="font-style:normal;">Charles Rolfe, Hard Copy Publishing</span></h4>
+                              </div>
+                              <div class="item">
+                                <h4>"The professionalism of Fatal Security can't be overstated. John custom tailors every report to meet our needs."<br><span style="font-style:normal;">Troy Alexander, Blue Ridge Preserve</span></h4>
+                              </div>
+                              <div class="item active">
+                                <h4>"Fatal Security has done an excellent job working with us to meet all our audit requirements. We couldn't be more satisfied."<br><span style="font-style:normal;">Allison Rodriguez, Glenbrook Academy</span></h4>
+                              </div>
+                              <div class="item">
+                                <h4>"John was a pleasure to get to work with. His commitment to meeting our deadlines was exceptional. Thanks again!"<br><span style="font-style:normal;">Grace Thomas, Ericson and Sons</span></h4>
+                              </div>
+
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <!-- Container (Clients Section) -->
+                        <div id="clients" class="container-fluid text-center">
+
+                          <h2>Featured Clients</h2>
+                          <br>
+                          <div class="text-center">
+                            <div class="row certified">
+                              <div class="col-sm-3 text-center">
+                                <img src="images/GoldGroup.png" alt="Gold Group" title="Gold Group">
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <img src="images/Dell.png" alt="Dell" title="Dell">
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <img src="images/AtlasVault.png" alt="AtlasVault" title="AtlasVault">
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <img src="images/Asurion.png" alt="Asurion" title="Asurion">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Our Values -->
+                        <div class="container-fluid bg-grey">
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <span class="glyphicon glyphicon-globe logo slideanim"></span>
+                            </div>
+                            <div class="col-sm-8">
+                              <h2>Our Values</h2><br>
+                              <h4><strong>MISSION:</strong> Our mission is to deliver world-class security assessments and to educate people in the art of security.</h4><br>
+                              <p><strong>VISION:</strong> Our vision is to instill pro-active security through demonstration, education, prevention, and remediation.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Add Google Maps -->
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5na2fAGfnyIv8dJXd1uOWFpT-aFqe6sg"></script>
+                        <script async>
+
+                        var myCenter = new google.maps.LatLng(34.039956, -84.340400);
+
+                        function initialize() {
+                          var mapProp = {
+                            center:myCenter,
+                            zoom:12,
+                            scrollwheel:false,
+                            draggable:false,
+                            mapTypeId:google.maps.MapTypeId.ROADMAP
+                          };
+
+                          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                          var marker = new google.maps.Marker({
+                            position:myCenter,
+                          });
+
+                          marker.setMap(map);
+                        }
+
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                      </script>
+
+                      <footer class="container-fluid text-center">
+                        <a href="#top" title="To Top">
+                          <span class="glyphicon glyphicon-chevron-up"></span>
+                        </a>
+                        <div class="row">
+                          <ul class="list-inline text-center">
+                            <li>
+                              <a href="https://twitter.com/Fatal_Security">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.linkedin.com/company/fatal-security">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+                                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                          <p class="copyright text-muted">Copyright &copy; Fatal Security LLC 2016 | All Rights Reserved | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a></p>
+                        </div>
+                      </footer>
+
+                      <script>
+                      $(document).ready(function(){
+                        // Add smooth scrolling to all links in navbar + footer link
+                        $(".navbar a, footer a[href='#top']").on('click', function(event) {
+                          // Make sure this.hash has a value before overriding default behavior
+                          if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+
+                            // Store hash
+                            var hash = this.hash;
+
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                              scrollTop: $(hash).offset().top
+                            }, 900, function(){
+
+                              // Add hash (#) to URL when done scrolling (default click behavior)
+                              window.location.hash = hash;
+                            });
+                          } // End if
+                        });
+
+                        $(window).scroll(function() {
+                          $(".slideanim").each(function(){
+                            var pos = $(this).offset().top;
+
+                            var winTop = $(window).scrollTop();
+                            if (pos < winTop + 600) {
+                              $(this).addClass("slide");
+                            }
+                          });
+                        });
+                      })
+                    </script>
+
+                    <script src="js/particles.js"></script>
+                    <script>
+                    particlesJS.load('particles-js', 'assets/particles.json', function() {});
+                  </script>
+
+                  <script>
+                  $(document).on('click','.navbar-collapse.in',function(e) {
+                    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                      $(this).collapse('hide');
+                    }
+                  });
+                </script>
+
+              </body>
+              </html>

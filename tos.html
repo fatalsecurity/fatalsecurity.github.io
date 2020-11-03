@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fatal Security: Terms of Use</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fatal Security Terms of Use.">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    vertical-align: top;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #CD0606;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    padding: 100px, 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .bg-particles {
+    background-color: #404040;
+    position:relative;
+    z-index:0;
+    min-width: 100%;
+    height: 300px;
+  }
+  .overlay {
+    position:absolute;
+    z-index:1;
+    min-width: 100%;
+  }
+  .logo-small {
+    color: #CD0606;
+    font-size: 50px;
+  }
+  .logo {
+    color: #CD0606;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #CD0606;
+  }
+  .carousel-indicators li {
+    border-color: #CD0606;
+  }
+  .carousel-indicators li.active {
+    background-color: #CD0606;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #808080;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #CD0606;
+    background-color: #fff !important;
+    color: #CD0606;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #CCCCCC !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #CD0606;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #C4C4C4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #CD0606 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #808080 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #CD0606;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+  <!--media-queries-->
+  <link href="assets/media-queries.css" rel="stylesheet" type="text/css">
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img src="images/fatalsecurity.png" alt="Fatal Security Logo" title="Fatal Security Logo" width="100%" height="100%"></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="window.open('index.html','_self')">HOME</a></li>
+          <li class="dropdown service_d">
+            <a href="#" onclick="window.open('index.html#services','_self')" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="window.open('services.html#wapt','_self')">Web App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#npt','_self')">Network Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#mapt','_self')">Mobile App Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ppt','_self')">Physical Pentesting</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#va','_self')">Vulnerability Assessments</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#ir','_self')">Incident Response</a></li>
+              <li class="divider"></li>
+              <li><a href="#" onclick="window.open('services.html#se','_self')">Social Engineering</a></li>
+            </ul>
+          </li>
+          <li class="service_m"><a href="#" onclick="window.open('index.html#services','_self')">SERVICES</a></li>
+          <li><a href="#" onclick="window.open('index.html#about','_self')">ABOUT</a></li>
+          <li><a href="#" onclick="window.open('index.html#contact','_self')">CONTACT</a></li>
+          <li><a href="#" onclick="window.open('index.html#testimonials','_self')">TESTIMONIALS</a></li>
+          <li><a href="#" onclick="window.open('blog.html','_self')">BLOG</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container (Particles) -->
+  <script>
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    document.write('<img class="pimgpsh_fullsize" src="images/pimgpsh_fullsize_distr.png"/><img class="pimgpsh_768" src="images/pimgpsh_768.png"/><img class="pimgpsh_480" src="images/pimgpsh_480.png"/>')
+  }else{
+    document.write('<div id="particles-js" class="jumbotron bg-particles"><div class="overlay center-text"></div></div>')
+  }
+</script>
+
+<!-- Container (Terms of Use) -->
+<div id="tos" class="container-fluid">
+  <h1 class="text-center">Fatal Security Terms of Service</h1>
+  <br>
+  <br>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+        <h4 class="panel-title">
+          <a class="accordion-toggle">
+            Acceptance of Terms
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          The following Terms of Service Agreement (the “TOS”) is a legally binding agreement that shall govern the relationship with our users and others which may interact or interface with Fatal Security LLC, also known as Fatal Security, located at 10719 Alpharetta Hwy #1622, Roswell, GA 30076 and our subsidiaries and affiliates, in association with the use of the Fatal Security website, which includes https://fatalsecurity.com, (the “Site”) and its Services, which shall be defined below.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"  data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+          <a class="accordion-toggle">
+            Description of Website Services Offered
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          To provide information regarding Information and Cyber Security and the services and solutions Fatal Security LLC provides.
+          <br>
+          Any and all visitors to our site, despite whether they are registered or not, shall be deemed as “users” of the herein contained Services provided for the purpose of this TOS. Once an individual enlists Fatal Security for any Services, through the process of completing an MSA, the individual shall then be considered a “client.”
+          <br>
+          The user and/or member acknowledges and agrees that the Services provided and made available through our website and applications, which may include some mobile applications and that those applications may be made available on various social media networking sites and numerous other platforms and downloadable programs, are the sole property of Fatal Security LLC. At its discretion, Fatal Security LLC may offer additional website Services and/or products, or update, modify or revise any current content and Services, and this Agreement shall apply to any and all additional Services and/or products and any and all updated, modified or revised Services unless otherwise stipulated. Fatal Security LLC does hereby reserve the right to cancel and cease offering any of the aforementioned Services and/or products. You, as the end user and/or member, acknowledge, accept and agree that Fatal Security LLC shall not be held liable for any such updates, modifications, revisions, suspensions or discontinuance of any of our Services and/or products. Your continued use of the Services provided, after such posting of any updates, changes, and/or modifications shall constitute your acceptance of such updates, changes and/or modifications, and as such, frequent review of this Agreement and any and all applicable terms and policies should be made by you to ensure you are aware of all terms and policies currently in effect. Should you not agree to the updated, revised or modified terms, you must stop using the provided Services forthwith.
+          <br>
+          Furthermore, the client understands, acknowledges and agrees that the Services offered shall be provided “AS IS” and as such Fatal Security LLC shall not assume any responsibility or obligation for the timeliness, missed delivery, deletion and/or any failure to store client content or communication records.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+          <a class="accordion-toggle">
+            Commercial Reuse of Services
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          The client herein agrees not to replicate, duplicate, copy, trade, sell, resell nor exploit for any commercial reason any part, use of, or access to Fatal Security’s sites.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour">
+          <a class="accordion-toggle">
+            Links
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body">
+          Either Fatal Security LLC or any third parties may provide links to other websites and/or resources. Thus, you acknowledge and agree that we are not responsible for the availability of any such external sites or resources, and as such, we do not endorse nor are we responsible or liable for any content, products, advertising or any other materials, on or available from such third party sites or resources. Furthermore, you acknowledge and agree that Fatal Security LLC shall not be responsible or liable, directly or indirectly, for any such damage or loss which may be a result of, caused or allegedly to be caused by or in connection with the use of or the reliance on any such content, goods or Services made available on or through any such site or resource.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFive">
+          <a class="accordion-toggle">
+            Modifications
+          </a>
+        </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse">
+        <div class="panel-body">
+          Fatal Security LLC shall reserve the right at any time it may deem fit, to modify, alter and or discontinue, whether temporarily or permanently, our service, or any part thereof, with or without prior notice. In addition, we shall not be held liable to you or to any third party for any such alteration, modification, suspension and/or discontinuance of our Services, or any part thereof.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSix">
+          <a class="accordion-toggle">
+            Limitation of Liability
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSix" class="panel-collapse collapse">
+        <div class="panel-body">
+          You explicitly acknowledge, understand and agree that Fatal Security LLC and our subsidiaries, affiliates, officers, employees, agents, partners and licensors shall not be liable to you for any punitive, indirect, incidental, special, consequential or exemplary damages, including, but not limited to, damages which may be related to the loss of any profits, goodwill, use, data and/or other intangible losses, even though we may have been advised of such possibility that said damages may occur, and result from:
+          <br>
+          <ul>
+            <li>The use or inability to use our service;</li>
+            <li>The cost of procuring substitute goods and services;</li>
+            <li>Unauthorized access to or the alteration of your transmissions and/or data;</li>
+            <li>Statements or conduct of any such third party on our service;</li>
+            <li>And any other matter which may be related to our service.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSeven">
+          <a class="accordion-toggle">
+            Release
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSeven" class="panel-collapse collapse">
+        <div class="panel-body">
+          In the event you have a dispute, you agree to release Fatal Security LLC (and its officers, directors, employees, agents, parent subsidiaries, affiliates, co-branders, partners and any other third parties) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, suspected or unsuspected, disclosed and undisclosed, arising out of or in any way connected to such dispute.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseEight">
+          <a class="accordion-toggle">
+            Exclusion and Limitations
+          </a>
+        </h4>
+      </div>
+      <div id="collapseEight" class="panel-collapse collapse">
+        <div class="panel-body">
+          There are some jurisdictions which do not allow the exclusion of certain warranties or the limitation of exclusion of liability for incidental or consequential damages. Therefore, some of the above limitations of sections warranty disclaimers and limitation of liability may not apply to you.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseNine">
+          <a class="accordion-toggle">
+            Violations
+          </a>
+        </h4>
+      </div>
+      <div id="collapseNine" class="panel-collapse collapse">
+        <div class="panel-body">
+          Please report any and all violations of this TOS to Fatal Security LLC as follows:<br>
+          Mailing Address:<br>
+          Fatal Security LLC<br>
+          10719 Alpharetta Hwy #1622<br>
+          Roswell, GA 30076<br>
+          Telephone: (678) 845-8342<br>
+          Email: info@fatalsecurity.com
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTen">
+          <a class="accordion-toggle">
+            Trademark Information
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTen" class="panel-collapse collapse">
+        <div class="panel-body">
+          You herein acknowledge, understand and agree that all of the Fatal Security LLC trademarks, copyright, trade name, service marks, and other Fatal Security LLC logos and any brand features, and/or product and service names are trademarks and as such, are and shall remain the property of Fatal Security LLC. You herein agree not to display and/or use in any manner the Fatal Security LLC logo or marks without obtaining Fatal Security LLC’s prior written consent.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#top" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div class="row">
+    <ul class="list-inline text-center">
+      <li>
+        <a href="https://twitter.com/Fatal_Security">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/fatal-security">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x" style="color:black"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright text-muted">Copyright &copy; Fatal Security LLC 2016 | All Rights Reserved | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#top']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+})
+</script>
+
+<script src="js/particles.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {});
+</script>
+
+<script>
+$(document).on('click','.navbar-collapse.in',function(e) {
+  if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    $(this).collapse('hide');
+  }
+});
+</script>
+
+</body>
+</html>
